@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from Python! XGenesis Inc"
+    return "Hello from Python! XGenesisSS Inc"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
