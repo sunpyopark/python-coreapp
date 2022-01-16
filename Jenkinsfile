@@ -3,15 +3,14 @@ node {
     environment {
         SLACK_CHANNEL = '#jenkins-ci'
     }	
-    
+
     env.AWS_ECR_LOGIN=true
     def newApp
-    def registry = 'krandmm/python-coreapp'
-    def awsecrregistry = 'python-coreapp'
+    def registry = 'krandmm/subserve-chatbot'
     def version = ':v0.1.'
     def registryCredential = 'docker-hub'
-    def awsecrCredential = 'dmg-ecr-credentials'
-    def gitlabCredential = 'git-lab'
+    def awsecrCredential = 'aws-ecr-credentials'
+    def awsecrregistry = 'subserve-chatbot'
 
 	stage('Git Pull') {
 		git 'https://github.com/sunpyopark/python-coreapp/'
