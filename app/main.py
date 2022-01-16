@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from Python! dmg blockchain solutions Inc"
+    return "Hello dmg blockchain solutions (Bitcoin Mining Pool)"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
