@@ -14,7 +14,7 @@ node {
     def gitlabCredential = 'git-lab'
 
 	stage('Git Pull') {
-		git 'http://gitlab.subserve.life/root/python-coreapp/'
+		git 'https://github.com/sunpyopark/python-coreapp/'
 	}
 	
 	stage('Build') {
