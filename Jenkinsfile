@@ -13,10 +13,9 @@ node {
     def awsecrCredential = 'dmg-ecr-credentials'
     def gitlabCredential = 'git-lab'
 
-
-	stage('GitLab') {
-                git credentialsId: 'git-lab', url: 'http://gitlab.subserve.life/root/python-coreapp'
-        }
+	stage('Git Pull') {
+		git 'http://gitlab.subserve.life/root/python-coreapp/'
+	}
 	
 	stage('Build') {
 		sh 'npm install'
